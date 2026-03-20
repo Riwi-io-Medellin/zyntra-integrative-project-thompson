@@ -1,0 +1,50 @@
+/* TextSearch styles */
+
+.search-box-wrapper {
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-mode {
+    display: none;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-mode.active { 
+    display: flex; 
+}
+
+#text input {
+    flex: 1;
+    border: none;
+    background: #f1f5f1;
+    padding: 15px 20px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.btn-go {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-clear {
+    background: #f1f5f1;
+    color: var(--gray);
+    border: none;
+    padding: 15px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+

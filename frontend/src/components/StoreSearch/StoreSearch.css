@@ -1,0 +1,68 @@
+/* StoreSearch Component Styles */
+.hero-stores .header-text {
+  /* Specific styles if needed */
+}
+
+.search-container h1 {
+  /* Styles for main-title already in global, but scoped if needed */
+}
+
+.search-box-wrapper {
+  /* Wrapper styles */
+}
+
+.btn-go {
+  /* Search button - reuse .btn-solid or specific */
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-clear {
+  padding: 10px 25px;
+  height: 50px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  border: 2px solid var(--gray);
+  background: white;
+  color: var(--gray);
+  transition: 0.3s;
+}
+
+.btn-clear:hover {
+  background: var(--gray);
+  color: white;
+}
+
+#main-input {
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  flex: 1;
+  background: transparent;
+}
+
+#main-input::placeholder {
+  color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .btn-go, .btn-clear {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+

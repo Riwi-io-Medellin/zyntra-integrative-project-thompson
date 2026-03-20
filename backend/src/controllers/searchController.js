@@ -8,7 +8,7 @@ export const searchProduct = async (req, res) => {
   console.log('- Cookies:', req.cookies);
   
   try {
-    const userId = req.user?.id || 1; // DEV fallback
+    const userId = req.user?.id || 1; 
     const { query } = req.body;
 
     console.log('- Processing query:', query, 'userId:', userId);

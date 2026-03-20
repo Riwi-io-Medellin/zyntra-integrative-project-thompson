@@ -1,0 +1,69 @@
+/* StoreCard Component Styles - Unified with ProductCard */
+.store-card { 
+  background: white; 
+  padding: 30px 20px; /* Un poco más compacto */
+  border-radius: 20px; /* Igual a la ProductCard */
+  text-align: center; 
+  border: none; /* Quitamos el borde sólido por la sombra de la card */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Misma sombra que ProductCard */
+  transition: 0.3s ease; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.store-card:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12); /* Sombra de hover idéntica */
+}
+
+.icon-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 15px; /* Cambiado a 15px para que rime con las imágenes de producto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa; /* Fondo neutro de las cards de producto */
+  transition: 0.3s;
+}
+
+.icon-circle img {
+  width: 70%; /* Ajuste para que el logo respire mejor */
+  height: 70%;
+  object-fit: contain;
+}
+
+.store-card h3 { 
+  font-weight: 700; 
+  font-size: 1.2rem; 
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.store-card p { 
+  color: #666; /* Un gris más cercano a la descripción del producto */
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.btn-select {
+  /* Aplicamos el gradiente del btn-buy */
+  background: linear-gradient(135deg, var(--primary), #28a745);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.btn-select:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}

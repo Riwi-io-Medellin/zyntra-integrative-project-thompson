@@ -7,7 +7,7 @@ export const callAIService = async (query, maxResults = 8) => {
     query,
     max_results_per_store: maxResults
   }, {
-    timeout: 30000
+    timeout: 120000
   });
 
   return response.data;
